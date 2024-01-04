@@ -30,12 +30,13 @@ Components that will be discussed in this tutorial are; Anchors, Quantifiers, Gr
 
 ### Anchors
 
-All Regular Expressions have two anchors; a beginning anchor and an ending anchor.
+(\W|^)po[#\-]{0,1}\s{0,1}\d{2}[\s-]{0,1}\d{4}(\W|$)
+
+Regular Expressions are tools we use for matching a pattern in text, anchors are special characters in a regex (regular expression) and are used to define the position of a pattern inside an input string. Regex (regular expression) have two anchors; a beginning anchor and an ending anchor. It is important to make sure that the whole string matches the specific pattern instead of just one part of the pattern.
 
 1. We use the caret [^] to indicate the beginning of a string.
 2. We use the dollar sign [$] to indicate the ending points of a string.
 
-(\W|^)po[#\-]{0,1}\s{0,1}\d{2}[\s-]{0,1}\d{4}(\W|$)
 You can clearly see them in the regex that will be discussed in this tutorial. Think of it as ; Every sentence begins with a [C]apital letter and ends with a full stop [.].
 
 ### Quantifiers
@@ -99,10 +100,9 @@ Character Escapes let you match certain characters prefixed by a backslash symbo
 
 ## Author
 
-Salome Mphago is a Front-End Developer / Graphic Designer
-[SalomeM](https://github.com/)
+Salome Mphago is a Front-End Developer / Graphic Designer [SalomeM](https://github.com/)
 
-[Matching an Alphanumeric Format](https://support.google.com/a/answer/1371417?hl=en#Match-an-Alphanumeric-Format) ;
+[Matching an Alphanumeric Format](https://support.google.com/a/answer/1371417?hl=en#Match-an-Alphanumeric-Format) had this to say about Matching an Alphanumeric Format;
 
 "\W matches any character that’s not a letter, digit, or underscore. It prevents the regex from matching characters before or after the number.
 ^ matches the start of a new line. Allows the regex to match the number if it appears at the beginning of a line, with no characters before it.
